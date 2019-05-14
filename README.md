@@ -5,7 +5,9 @@ Description : This is a sample ecommerce Java Maven Project which exposes RESTfu
 
 ## APIs -
 
+
 1. POST **/api/item** - Add an Item
+
 
 Sample Request - 
 
@@ -22,7 +24,9 @@ Sample Response -
     "items": null
 }
 
+
 2. GET **/api/item** - Retrieve all Items
+
 
 Sample Response - 
 
@@ -45,7 +49,9 @@ Sample Response -
     ]
 }
 
+
 3. PUT **/api/item/{itemName}** - Update an Item, currently quantity of Item can be updated
+
 
 Sample Request - 
 
@@ -62,7 +68,9 @@ Sample Response -
     "items": null
 }
 
+
 4. DELETE **/api/item/{itemName}** - Delete an Item
+
 
 Sample Response -
 
@@ -72,7 +80,9 @@ Sample Response -
     "items": null
 }
 
+
 5. POST **/api/order** - Place one or multiple Orders
+
 
 Sample Request - 
 
@@ -96,7 +106,9 @@ Sample Response -
     "orders": null
 }
 
+
 6. GET **/api/order** - Retrieve all Orders
+
 
 Sample Response - 
 
@@ -174,9 +186,12 @@ Sample Response -
 }
 
 
+
 **Code also take cares of following** - out of stock, item already exists, quantity should be >= 0, ordered item quantity is more than item in stock etc
 
+
 ## Database - 
+
 
 MYSQL database has been used
 Hibernate framework has been used
@@ -184,7 +199,9 @@ Hibernate framework has been used
 Tables - 
 
 ItemTable - (id Primary Key, itemName, numOfItem)
+
 OrderTable - (id Primary Key, orderID, itemName, numOfItem, emailID)
+
 
 --------  END --------
 
